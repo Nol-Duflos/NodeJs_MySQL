@@ -10,3 +10,7 @@ let user = mysql.createConnection({
 
 });
 
+user.connect(functon(err)) { //err pour "error"
+    if (err) throw err; //Vérification d'erreur
+    console.log("Bravo, la connexion est établie");
+}
